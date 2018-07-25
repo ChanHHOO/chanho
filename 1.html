@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
-<title>chanho</title>
-<style>
-#form{
-position:center
-}
-
-</style>
+<head>
+    <meta charset="UTF-8">
+    <title>chanho</title>
+    <style>
+        #login{
+            position: absolute;
+            left: 40%;
+            top: 40%;
+            }
+        #title{
+            position:absolute;
+            left: 40%;
+            top: 30%;
+            }
+	#signup{
+	    position:absolute;
+	    left:45%;
+	    top: 51.1%;
+	}
+    </style>
 </head>
-<body>
-<h1 name = "title">제목두 들어가야함</h1>
-<form action="/phptest.php" method="post">
-<fieldset style = "width:150;">
-Id: <br>
-<input type="text" name="Id"><br>
-Password: <br />
-<input type="password" name="Passwd"><br>
-<button type="submit" text="submit"name = "submit">login</button>
-</fieldset>
-</form>
-</body>
+    <body>
+        <h1 id = "title">LOGIN</h1>
+        <form id ="login"  action="/phptest.php" method="post">
+            <fieldset style = "width:150px;">
+                Id: <br>
+                <input type="text" name="Id"><br>
+                Password: <br />
+                <input type="password" name="Passwd"><br>
+                <button type="submit" id = "login_button">login</button>
+            </fieldset>
+        </form>
+		<button id = "signup" onclick="location.href='signup.html'" id = "signup_button">signup</button>
+    </body>
 </html>
 
