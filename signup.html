@@ -3,14 +3,21 @@
         <title>signup</title>
         <meta charset="utf8" lang="ko">
 		<style>
+			#signup{
+			position:absolute;
+			left:35%;
+			top:40%;
+			}
 		</style>
     </head>
     <body>
-        <form id = "signup" action = "./signup.php">
-			<fieldset style="position:absolute; width:300px;">
-				ID &nbsp;&nbsp;&nbsp; <input type="text"><br />
-				PASSWORD <input type="password">
-
+        <form id = "signup" action = "./signup.php" method="post">
+			<fieldset style="position:absolute; width:500px;">
+				ID :&nbsp;&nbsp;&nbsp; <input name="signup_id" type="text"><br />
+				PASSWORD : <input name="signup_password"type="password"><br />
+				이름 : <input name="signup_name" type = "text"><br />
+				email : <input name="signup_email_1"type = "text">@<input id="signup_email_2"type="text">
+				<input type="submit" value = "signup">			
 			</fieldset>       
         </form>
     </body>
